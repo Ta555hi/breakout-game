@@ -1,6 +1,8 @@
 import pygame
 from random import randrange as rnd
 pygame.init()
+from pygame import mixer
+mixer.init()
 
 WIDTH, HEIGHT = 600, 400
 fps = 60
@@ -9,6 +11,9 @@ sc = pygame.display.set_mode((WIDTH,HEIGHT))
 pygame.display.set_caption('Block Breaker Game')
 clock = pygame.time.Clock()
 text = pygame.font.Font(None, 40)
+
+mixer.music.load('Extreme-Sport-Trap-Music-PISTA(chosic.com).mp3')
+mixer.music.play()
 
 #background image
 background = pygame.image.load("blue space.jpg").convert()
@@ -97,7 +102,7 @@ while True:
 
     # game over
     game_over = False
-       
+     
      # game over
     if ball.bottom > HEIGHT:
         game_over_text = text.render('GAME OVER!', True, (255, 0 ,0 ))  
