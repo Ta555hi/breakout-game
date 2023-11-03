@@ -34,7 +34,7 @@ dx, dy = 1, -1
 block_list = [pygame.Rect(10 + 120 * i, 10 + 50 * j, 100, 35) for i in range (5) for j in range(4)]
 color_list = [(rnd(30, 256), rnd(30, 256), rnd(30, 256)) for i in range (10) for j in range(5)]
 
-mixer.music.load('Adventure-320bit(chosic.com).mp3')
+mixer.music.load('Extreme-Sport-Trap-Music-PISTA(chosic.com).mp3')
 mixer.music.play()
 
 def detect_collision(dx, dy, ball, rect):
