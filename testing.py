@@ -64,7 +64,5 @@ class TestBlockBreakerGame(unittest.TestCase):
             new_dx, new_dy = detect_collision(dx, dy, ball, paddle)
         self.assertNotEqual((dx, dy), (new_dx, new_dy))
 
-    # Add more tests for other functionalities if needed
-
 if __name__ == '__main__':
     unittest.main()
