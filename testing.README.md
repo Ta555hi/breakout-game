@@ -23,7 +23,9 @@ Main Execution:
 if __name__ == '__main__': This condition checks whether the script is being run directly (not imported as a module), and if so, it runs the unittests using unittest.main().
 Overall, this script provides a foundation for testing key functionalities of a Block Breaker game, focusing on the detect_collision function and the movement of the ball. It uses the Pygame library for game development and unittest for testing.
 
-
-
+Reference 
+https://www.youtube.com/watch?si=S12ryN5bv1VyYxj_&fbclid=IwAR3EglZae-QalhJKiVTTNoNgAC8r1--dlFEw5jJbwKqri_zDAtKsu1WZ4tU&v=v1MtwCPTmBI&feature=youtu.be
+-The TestBlockBreakerGame class inherits from unittest.TestCase and contains test methods for the detect_collision function, ball movement, and collision with a paddle from my pygame called breakout.
+-The script utilizes Pygame functions for creating a Pygame display, initializing Pygame, and working with Pygame Rect objects.
 
 
